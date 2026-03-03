@@ -2,125 +2,177 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AI Class Newsletter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Research</title>
 
 <style>
-/* Page Base */
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff9e5;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
 }
 
-/* Full Width Header */
+/* ===== HEADER BANNER ===== */
+header {
+    width: 100%;
+    height: 140px; /* adjust height here */
+    overflow: hidden;
+}
+
 header img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* Content Wrapper */
-.newsletter-content {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    background-color: #111;
 }
 
-/* Section Headings */
-.newsletter-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
+.tab-button {
+    flex: 1;
+    padding: 14px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* Paragraph Styling */
-.newsletter-content p {
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-size: 16px;
+.tab-button:hover {
+    background-color: #333;
 }
 
-/* Image Grid */
-.newsletter-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin: 40px 0;
+.tab-button.active {
+    background-color: #444;
 }
 
-/* Individual Prompt Blocks */
-.prompt-block {
-  max-width: 300px;
-  text-align: center;
+/* ===== TAB CONTENT ===== */
+.tab-content {
+    display: none;
+    padding: 30px;
+    background: white;
 }
 
-.prompt-block img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
+.tab-content.active {
+    display: block;
 }
 
-.prompt-block p {
-  margin-top: 12px;
-  font-size: 14px;
-  line-height: 1.4;
+/* ===== PROMPT GRID ===== */
+.prompt-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
 }
+
+.prompt-card {
+    width: 300px;
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.prompt-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.prompt-card p {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
 </style>
-
 </head>
+
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-  <img src="image0.png" alt="AI Class Newsletter Header">
+    <img src="image0.png" alt="Header Banner">
 </header>
 
-<div class="newsletter-content">
-
-  <h2>3-Prompt Test – Google Nano Banana 2</h2>
-
-  <p>
-    For this test, I examined how variations in prompt wording influence AI-generated imagery using Google Nano Banana 2, a free image generation tool. Three prompts were created with increasing levels of descriptive detail, beginning with a simple “futuristic city” and progressing toward a highly specific cyberpunk scene featuring neon lighting, flying vehicles, holographic advertisements, and cinematic visual effects. The objective was to observe how incremental changes in language shape visual output.
-  </p>
-
-  <p>
-    The results clearly demonstrate that even minor modifications in wording significantly alter composition, lighting, atmosphere, and stylistic interpretation. As prompts became more detailed, the generated images reflected greater complexity and stronger aesthetic direction. This reinforces the importance of structured prompt engineering when aiming for intentional, controlled outcomes.
-  </p>
-
-  <p>
-    I particularly value Google Nano Banana 2 because of its accessibility and consistency. Despite being a free platform, it produces strong visual results while remaining easy to navigate. The tool encourages experimentation and makes it easier to understand how linguistic nuance guides AI creativity. This makes it especially useful for learning and applied analysis.
-  </p>
-
-  <p>
-    In a subsequent section, these results will be compared with outputs generated using OpenAI’s DALL·E. By applying similar prompts across both tools, differences in rendering style, detail accuracy, interpretive bias, and output consistency can be evaluated to provide a structured comparative analysis.
-  </p>
-
-  <div class="newsletter-images">
-
-    <div class="prompt-block">
-      <img src="image1.png" alt="Prompt 1 Result">
-      <p><strong>Prompt 1:</strong> A futuristic city</p>
-    </div>
-
-    <div class="prompt-block">
-      <img src="image2.png" alt="Prompt 2 Result">
-      <p><strong>Prompt 2:</strong> A futuristic city at night with neon lights, flying cars, and tall glass skyscrapers</p>
-    </div>
-
-    <div class="prompt-block">
-      <img src="image3.png" alt="Prompt 3 Result">
-      <p><strong>Prompt 3:</strong> A cyberpunk futuristic city at night, neon pink and blue lighting, flying cars in the sky, holographic advertisements, rainy streets reflecting light, ultra-detailed, cinematic lighting, 4K, wide angle</p>
-    </div>
-
-  </div>
-
-  <p>
-    <strong>Observations:</strong> The baseline prompt produced a generalized futuristic environment with minimal stylistic identity. Adding contextual details in Prompt 2 introduced stronger visual structure and nighttime ambiance. The final, highly specific cyberpunk prompt resulted in a distinctly cinematic composition with enhanced lighting contrast, environmental texture, and thematic clarity. This progression illustrates how specificity directly influences generative depth and stylistic outcome.
-  </p>
-
+<!-- ===== NAVIGATION ===== -->
+<div class="tabs">
+    <button class="tab-button active" onclick="openTab('home', this)">Home</button>
+    <button class="tab-button" onclick="openTab('research', this)">Prompt Research</button>
 </div>
+
+<!-- ===== HOME TAB ===== -->
+<div id="home" class="tab-content active">
+    <h2>AI Prompt Variation Study</h2>
+    <p>
+        This research evaluates how minor wording adjustments influence generated image outputs using Google Nano Banana 2. Three structured prompt variations were tested to measure stylistic consistency, compositional accuracy, and atmospheric interpretation.
+    </p>
+</div>
+
+<!-- ===== RESEARCH TAB ===== -->
+<div id="research" class="tab-content">
+    <h2>Three-Prompt Test Results</h2>
+
+    <div class="prompt-grid">
+
+        <div class="prompt-card">
+            <img src="prompt1-basic.png" alt="Prompt 1 Basic">
+            <p>
+                Prompt 1 establishes a baseline description with minimal modifiers. This version serves as the control output.
+            </p>
+        </div>
+
+        <div class="prompt-card">
+            <img src="prompt2-detailed.png" alt="Prompt 2 Detailed">
+            <p>
+                Prompt 2 introduces stylistic and environmental descriptors, resulting in noticeable tonal and compositional shifts.
+            </p>
+        </div>
+
+        <div class="prompt-card">
+            <img src="prompt3-specific.png" alt="Prompt 3 Specific">
+            <p>
+                Prompt 3 applies specific atmospheric and cinematic language, demonstrating increased responsiveness to contextual modifiers.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+function openTab(tabName, buttonElement) {
+
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(tabName).classList.add('active');
+    buttonElement.classList.add('active');
+}
+</script>
 
 </body>
 </html>
