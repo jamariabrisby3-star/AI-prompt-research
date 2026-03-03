@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI Class Newsletter</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>AI Class Newsletter</title>
+
+<style>
+/* Page Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff9e5;
+  color: #333;
+}
+
+/* Full Width Header */
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content Wrapper */
+.newsletter-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section Headings */
+.newsletter-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraph Styling */
+.newsletter-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Image Grid */
+.newsletter-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+/* Individual Prompt Blocks */
+.prompt-block {
+  max-width: 300px;
+  text-align: center;
+}
+
+.prompt-block img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.prompt-block p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+</style>
+
 </head>
 <body>
 
-  <header>
-    <img src="image0.png" alt="AI Class Newsletter Header">
-  </header>
+<header>
+  <img src="image0.png" alt="AI Class Newsletter Header">
+</header>
 
-  <div class="intro">
-    <h1>AI Class Newsletter – Week [Insert Week/Date]</h1>
-    <p>
-      In this edition, we explore the most exciting creativity tools in artificial intelligence. 
-      From generating images from text, producing dynamic videos, to composing unique audio, 
-      these tools are redefining creative possibilities. 
-      Learn how each works, what sets them apart, and the potential they unlock for experimentation and innovation.
-    </p>
+<div class="newsletter-content">
+
+  <h2>3-Prompt Test – Google Nano Banana 2</h2>
+
+  <p>
+    For this test, I examined how variations in prompt wording influence AI-generated imagery using Google Nano Banana 2, a free image generation tool. Three prompts were created with increasing levels of descriptive detail, beginning with a simple “futuristic city” and progressing toward a highly specific cyberpunk scene featuring neon lighting, flying vehicles, holographic advertisements, and cinematic visual effects. The objective was to observe how incremental changes in language shape visual output.
+  </p>
+
+  <p>
+    The results clearly demonstrate that even minor modifications in wording significantly alter composition, lighting, atmosphere, and stylistic interpretation. As prompts became more detailed, the generated images reflected greater complexity and stronger aesthetic direction. This reinforces the importance of structured prompt engineering when aiming for intentional, controlled outcomes.
+  </p>
+
+  <p>
+    I particularly value Google Nano Banana 2 because of its accessibility and consistency. Despite being a free platform, it produces strong visual results while remaining easy to navigate. The tool encourages experimentation and makes it easier to understand how linguistic nuance guides AI creativity. This makes it especially useful for learning and applied analysis.
+  </p>
+
+  <p>
+    In a subsequent section, these results will be compared with outputs generated using OpenAI’s DALL·E. By applying similar prompts across both tools, differences in rendering style, detail accuracy, interpretive bias, and output consistency can be evaluated to provide a structured comparative analysis.
+  </p>
+
+  <div class="newsletter-images">
+
+    <div class="prompt-block">
+      <img src="image1.png" alt="Prompt 1 Result">
+      <p><strong>Prompt 1:</strong> A futuristic city</p>
+    </div>
+
+    <div class="prompt-block">
+      <img src="image2.png" alt="Prompt 2 Result">
+      <p><strong>Prompt 2:</strong> A futuristic city at night with neon lights, flying cars, and tall glass skyscrapers</p>
+    </div>
+
+    <div class="prompt-block">
+      <img src="image3.png" alt="Prompt 3 Result">
+      <p><strong>Prompt 3:</strong> A cyberpunk futuristic city at night, neon pink and blue lighting, flying cars in the sky, holographic advertisements, rainy streets reflecting light, ultra-detailed, cinematic lighting, 4K, wide angle</p>
+    </div>
+
   </div>
+
+  <p>
+    <strong>Observations:</strong> The baseline prompt produced a generalized futuristic environment with minimal stylistic identity. Adding contextual details in Prompt 2 introduced stronger visual structure and nighttime ambiance. The final, highly specific cyberpunk prompt resulted in a distinctly cinematic composition with enhanced lighting contrast, environmental texture, and thematic clarity. This progression illustrates how specificity directly influences generative depth and stylistic outcome.
+  </p>
+
+</div>
 
 </body>
 </html>
-
-
