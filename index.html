@@ -1,71 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Prompt Research</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>AI Class Newsletter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <img src="image0.png" alt="Header Banner">
-</header>
+  <header>
+    <img src="image0.png" alt="AI Class Newsletter Header">
+  </header>
 
-<div class="tabs">
-    <button class="tab-button active" onclick="openTab('home', this)">Home</button>
-    <button class="tab-button" onclick="openTab('research', this)">Prompt Research</button>
-</div>
-
-<div id="home" class="tab-content active">
-    <h2>AI Prompt Variation Study</h2>
+  <div class="intro">
+    <h1>AI Class Newsletter – Week [Insert Week/Date]</h1>
     <p>
-        This research evaluates how minor wording adjustments influence generated image outputs using Google Nano Banana 2. Three structured prompt variations were tested to measure stylistic consistency, compositional accuracy, and atmospheric interpretation.
+      In this edition, we explore the most exciting creativity tools in artificial intelligence. 
+      From generating images from text, producing dynamic videos, to composing unique audio, 
+      these tools are redefining creative possibilities. 
+      Learn how each works, what sets them apart, and the potential they unlock for experimentation and innovation.
     </p>
-</div>
-
-<div id="research" class="tab-content">
-    <h2>Three-Prompt Test Results</h2>
-
-    <div class="prompt-grid">
-
-        <div class="prompt-card">
-            <img src="prompt1-basic.png" alt="Prompt 1 Basic">
-            <p>
-                Prompt 1 establishes a baseline description with minimal modifiers. This version serves as the control output.
-            </p>
-        </div>
-
-        <div class="prompt-card">
-            <img src="prompt2-detailed.png" alt="Prompt 2 Detailed">
-            <p>
-                Prompt 2 introduces stylistic and environmental descriptors, resulting in noticeable tonal and compositional shifts.
-            </p>
-        </div>
-
-        <div class="prompt-card">
-            <img src="prompt3-specific.png" alt="Prompt 3 Specific">
-            <p>
-                Prompt 3 applies specific atmospheric and cinematic language, demonstrating increased responsiveness to contextual modifiers.
-            </p>
-        </div>
-
-    </div>
-</div>
-
-<script>
-function openTab(tabName, buttonElement) {
-    const contents = document.querySelectorAll('.tab-content');
-    contents.forEach(content => content.classList.remove('active'));
-
-    const buttons = document.querySelectorAll('.tab-button');
-    buttons.forEach(button => button.classList.remove('active'));
-
-    document.getElementById(tabName).classList.add('active');
-    buttonElement.classList.add('active');
-}
-</script>
+  </div>
 
 </body>
 </html>
