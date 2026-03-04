@@ -112,3 +112,13 @@ main {
     color: #ffd700;
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
