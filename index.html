@@ -1,133 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AI Prompt Engineering Study</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>AI Creativity Newsletter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="header-content">
-        <h1>Prompt Engineering & Output Sensitivity</h1>
-        <p>Evaluating Visual Variability in Google Nano Banana 2</p>
-    </div>
+    <img src="header.png" alt="AI Header">
 </header>
 
 <nav>
-    <button class="nav-btn active" onclick="openTab('research', this)">Research</button>
-    <button class="nav-btn" onclick="openTab('resources', this)">Resources</button>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Tools</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="resources.html">Resources</a>
 </nav>
 
-<main>
+<div class="container">
 
-<!-- ================= RESEARCH TAB ================= -->
-<section id="research" class="tab active">
-
-    <article>
-        <h2>Research Objective</h2>
+    <div class="card">
+        <h2>Overview</h2>
         <p>
-            This study investigates how incremental prompt modification affects generative image output using Google Nano Banana 2.
-            Three controlled prompts were constructed using the same base subject while systematically increasing descriptive
-            specificity and environmental direction. The goal was to measure changes in compositional framing,
-            lighting interpretation, atmospheric cohesion, and stylistic fidelity.
+        This newsletter explores modern AI creativity tools including text-to-video,
+        text-to-image, and generative media systems. The focus is on how these
+        systems work, how they differ, and their real-world potential.
         </p>
-    </article>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Prompt 1 – Baseline</h3>
-            <img src="p1.png" alt="Prompt 1">
-            <p>
-                The baseline prompt contains minimal descriptive modifiers. Output demonstrates neutral framing,
-                balanced lighting, and limited stylistic bias. This image serves as the control condition
-                for comparative evaluation.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Prompt 2 – Descriptive Expansion</h3>
-            <img src="p2.png" alt="Prompt 2">
-            <p>
-                The second prompt introduces additional environmental and lighting descriptors.
-                The output reflects increased tonal contrast, stronger depth separation,
-                and more defined spatial structure.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Prompt 3 – Cinematic Specificity</h3>
-            <img src="p3.png" alt="Prompt 3">
-            <p>
-                The final prompt incorporates cinematic language and atmospheric emphasis.
-                Results show directional lighting, mood amplification, and tighter compositional control,
-                indicating high responsiveness to linguistic precision.
-            </p>
-        </div>
-
     </div>
 
-    <article>
-        <h2>Comparative Findings</h2>
+    <div class="card">
+        <h2>What I Learned</h2>
         <p>
-            Analysis confirms a direct relationship between prompt specificity and output refinement.
-            Increased descriptive precision yielded stronger environmental consistency,
-            clearer subject isolation, and enhanced narrative structure.
-            These findings reinforce the importance of structured prompt engineering
-            when seeking predictable generative outcomes.
+        AI creative tools use diffusion models, transformer architectures,
+        and large training datasets to generate media from prompts.
+        Each platform varies in model size, output control, realism,
+        and commercial accessibility.
         </p>
-    </article>
-
-</section>
-
-<!-- ================= RESOURCES TAB ================= -->
-<section id="resources" class="tab">
-
-    <h2>Platform Resources & Pricing</h2>
-
-    <div class="resource-card">
-        <h3>Google Veo 2 Overview</h3>
-        <p>Official documentation and overview of Google's text-to-video model.</p>
-        <a href="https://deepmind.google/technologies/veo/" target="_blank">Official Veo 2 Page</a>
     </div>
 
-    <div class="resource-card">
-        <h3>Google AI Pricing & Services</h3>
-        <p>Details on tier access, enterprise integration, and API services.</p>
-        <a href="https://ai.google/" target="_blank">Google AI Platform</a>
-    </div>
-
-    <div class="resource-card">
-        <h3>OpenAI Sora Overview</h3>
-        <p>Information about OpenAI's text-to-video system and generative capabilities.</p>
-        <a href="https://openai.com/sora" target="_blank">OpenAI Sora</a>
-    </div>
-
-    <div class="resource-card">
-        <h3>OpenAI Pricing Tiers</h3>
-        <p>Subscription levels and enterprise offerings.</p>
-        <a href="https://openai.com/pricing" target="_blank">OpenAI Pricing</a>
-    </div>
-
-</section>
-
-</main>
-
-<script>
-function openTab(tabId, btn) {
-    const tabs = document.querySelectorAll('.tab');
-    const buttons = document.querySelectorAll('.nav-btn');
-
-    tabs.forEach(tab => tab.classList.remove('active'));
-    buttons.forEach(button => button.classList.remove('active'));
-
-    document.getElementById(tabId).classList.add('active');
-    btn.classList.add('active');
-}
-</script>
+</div>
 
 </body>
 </html>
