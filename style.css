@@ -1,61 +1,65 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #2c2f4a;
-    color: #ffffff;
+    background: #1c1f2b;
+    color: #e6e6e6;
+    line-height: 1.6;
 }
 
-/* HEADER */
+/* Header Image */
 header {
-    background-color: #111;
     text-align: center;
-    padding: 10px 0;
+    background: #111;
+    padding: 20px 0;
 }
 
 header img {
-    max-width: 700px;
+    max-width: 900px;
     width: 90%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav {
-    background-color: #4b3fa3;
-    text-align: center;
-    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px 0;
+    background: #262a3a;
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #8a7dff;
 }
 
-/* MAIN CONTENT */
+/* Main Layout */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
 }
 
-/* CONTENT CARDS */
-.card {
-    background-color: #3a3d5c;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    border: 2px solid #6c63ff;
+/* Section Styling */
+.section {
+    margin-bottom: 70px;
 }
 
-h2 {
-    margin-top: 0;
-    color: #ffd700;
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #8a7dff;
+    border-bottom: 2px solid #8a7dff;
+    padding-bottom: 6px;
+}
+
+.section p {
+    margin-bottom: 15px;
+    max-width: 800px;
 }
