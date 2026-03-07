@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AI Platform Pricing & Resources</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | AI Research Newsletter</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="resources.html">Resources</a>
-</nav>
+    <nav>
+        <div class="logo">AI RESEARCH NEWSLETTER</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#analysis">Analysis</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
+    <header>
+        <div class="hero">
+            <h1 class="cool-font">AI TOOL <span class="neon">RESOURCES</span></h1>
+            <p>Official links and documentation for the tools evaluated in Phase 2.</p>
+        </div>
+    </header>
 
-<div class="card">
-<h2>OpenAI Pricing Structure</h2>
-<p>
-OpenAI offers both subscription-based and API-based pricing. Subscription
-tiers provide access to advanced models with usage limits depending on the
-plan. Higher tiers increase message limits, priority access, and advanced
-model availability.
-</p>
+    <main>
+        <section class="block">
+            <h2>Primary Research Tools</h2>
+            <p>The following tools were utilized for the comparative prompt engineering tests conducted in this newsletter.</p>
+            
+            <div class="comparison-card">
+                <div class="card-header">Google Nano Banana 2</div>
+                <p>The primary model used for architectural and environmental reflection tests. Part of the Gemini 3.1 Flash Image family.</p>
+                <div class="prompt-display">
+                    <a href="https://deepmind.google/technologies/gemini/" target="_blank" style="color: var(--neon-blue); text-decoration: none;">&rarr; Visit Google DeepMind</a>
+                </div>
+            </div>
 
-<p>
-API pricing operates on token usage, meaning cost scales with input and output
-length. This structure benefits developers and businesses building
-applications, but can become expensive at large scale.
-</p>
-</div>
+            <div class="comparison-card">
+                <div class="card-header">OpenAI DALL-E 3</div>
+                <div class="image-grid" style="display: block;">
+                    <p>Utilized for testing prompt adherence and holographic clarity. Accessed via the ChatGPT interface.</p>
+                    <div class="prompt-display">
+                        <a href="https://openai.com/dall-e-3" target="_blank" style="color: var(--neon-blue); text-decoration: none;">&rarr; Visit OpenAI DALL-E 3</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="card">
-<h2>Google AI Pricing Structure</h2>
-<p>
-Google AI services are typically integrated within Google Cloud’s pricing
-model. Costs depend on compute usage, storage, and API calls. Pricing often
-scales based on processing time and model complexity.
-</p>
+            <div class="comparison-card">
+                <div class="card-header">GitHub Pages</div>
+                <p>The hosting platform used to deploy this HTML/CSS research project as a live web resource.</p>
+                <div class="prompt-display">
+                    <a href="https://pages.github.com/" target="_blank" style="color: var(--neon-blue); text-decoration: none;">&rarr; Visit GitHub Pages</a>
+                </div>
+            </div>
+        </section>
 
-<p>
-Enterprise-level integrations may include additional infrastructure services,
-making Google’s ecosystem more cloud-oriented compared to OpenAI’s more
-direct consumer access model.
-</p>
-</div>
+        <section class="block">
+            <h2>Research Methodology</h2>
+            <p>All images were generated using identical prompt strings to ensure a "Fair-Test" environment. Evaluation was based on three core metrics: <strong>Instruction Adherence</strong>, <strong>Global Illumination</strong>, and <strong>Text Clarity</strong>.</p>
+        </section>
+    </main>
 
-<div class="card">
-<h2>Key Differences</h2>
-<p>
-OpenAI focuses on direct platform access with structured subscription tiers
-and developer APIs. Google emphasizes cloud integration and enterprise-scale
-infrastructure. OpenAI may be simpler for independent creators, while
-Google’s ecosystem may benefit organizations already using Google Cloud.
-</p>
-</div>
-
-</div>
+    <footer>
+        <p>AI Tool Analysis Resource | Week 8 Project Submission</p>
+    </footer>
 
 </body>
 </html>
