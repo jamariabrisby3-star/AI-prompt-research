@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Research Newsletter</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <nav>
-        <div class="logo">AI RESEARCH NEWSLETTER</div>
-        <ul>
+<nav>
+        <div class="logo">AI RESEARCH LAB</div> <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#analysis">Analysis</a></li>
             <li><a href="resources.html">Resources</a></li>
@@ -20,82 +8,104 @@
 
     <header>
         <div class="hero">
-            <h1 class="cool-font">AI Research Newsletter <span class="neon">NEWSLETTER</span></h1>
-            <p>Phase 2: Structured Tool Analysis & Comparison</p>
+            <h1 class="cool-font">AI TOOL ANALYSIS <span class="neon-pink">NEWSLETTER</span></h1> <p>Phase 2 | Volume 1: Cross-Model Image Generation Benchmarking</p>
         </div>
     </header>
+    ```
 
-    <main>
-        <section class="block intro-section">
-            <h2>Introduction</h2>
-            <p>Welcome to the Phase 2 edition of the AI Research Newsletter. This research evaluates the evolution of AI image generation, specifically comparing <strong>Google's Nano Banana 2</strong> and <strong>OpenAI's DALL-E 3</strong>. The goal is to demonstrate how technical descriptive layering affects the output of different AI architectures, focusing on consistency, lighting accuracy, and instruction adherence.</p>
-        </section>
+---
 
-        <section id="analysis">
-            <h2 class="section-title">AI PROMPT TEST</h2>
+#### Upgrade 2: The New Introduction Mission Statement
 
-            <div class="comparison-card">
-                <div class="card-header">Test 01: Baseline Prompt</div>
-                <div class="prompt-display"><code>"A futuristic city"</code></div>
-                <div class="image-grid">
-                    <div class="image-item">
-                        <img src="p1.png" alt="Google Nano Banana 2 Baseline">
-                        <span class="img-label">Google: Nano Banana 2</span>
-                    </div>
-                    <div class="image-item">
-                        <img src="open1.png" alt="OpenAI DALL-E 3 Baseline">
-                        <span class="img-label blue">OpenAI: DALL-E 3</span>
-                    </div>
+Find the box labeled `<section class="block intro-section">`. This is a complete replacement for that box. I have expanded it to discuss the Phase 2 goals of testing how descriptive layering impacts the output of different AI engines.
+
+```html
+    <section class="block intro-section">
+        <h2>Introduction</h2>
+        <p>Welcome to the Phase 2 edition of the AI Research Newsletter. This issue moves beyond foundational understanding, establishing a <strong>structured tool analysis methodology</strong>. We have conducted a head-to-head benchmarking study of two leading image engines: <strong>Google Nano Banana 2</strong> (Gemini 3.1 Flash Image) and <strong>OpenAI DALL-E 3</strong> (GPT-4 Integration).</p>
+        <p>Our research focuses on <strong>descriptive descriptive layering</strong>—analyzing how technical modifiers such as lighting vectors, environmental textures, and specific camera angles are interpreted across different neural architectures. This comparative study aims to evaluate each engine’s latent consistency and its capability to synthesize photorealistic details without compromising structural grounding.</p>
+    </section>
+    ```
+
+---
+
+#### Upgrade 3: The Cross-Model Deep-Dive Analysis
+
+Find the line `<h2 class="section-title">` (currently "AI PROMPT TEST"). The analysis text for all 3 cards is in this section. I have completely rewritten the "Analysis" headers and text to provide a deep comparative study. Replace that entire section with this block.
+
+```html
+    <section id="analysis">
+        <h2 class="section-title">COMPARATIVE EVALUATION: GOOGLE vs. OPENAI</h2>
+
+        <div class="comparison-card">
+            <div class="card-header">Evaluation Case 01: Baseline Structural Fidelity</div>
+            <div class="prompt-display"><code>"A futuristic city"</code></div>
+            
+            <div class="side-by-side">
+                <div class="img-wrapper">
+                    <img src="p1.png" alt="Google Nano Banana 2 Baseline">
+                    <span class="img-label">Google: Nano Banana 2</span>
                 </div>
-                <div class="evaluation">
-                    <h4>Analysis:</h4>
-                    <p>At the baseline level, both tools provide general interpretations. Google focuses on architectural symmetry, while OpenAI leans toward a cleaner, more digital-art aesthetic.</p>
-                </div>
-            </div>
-
-            <div class="comparison-card">
-                <div class="card-header">Test 02: Structural Detail</div>
-                <div class="prompt-display"><code>"A futuristic city at night with neon lights, flying cars, and tall glass skyscrapers"</code></div>
-                <div class="image-grid">
-                    <div class="image-item">
-                        <img src="p2.png" alt="Google Nano Banana 2 Detail">
-                        <span class="img-label">Google: Nano Banana 2</span>
-                    </div>
-                    <div class="image-item">
-                        <img src="open2.png" alt="OpenAI DALL-E 3 Detail">
-                        <span class="img-label blue">OpenAI: DALL-E 3</span>
-                    </div>
-                </div>
-                <div class="evaluation">
-                    <h4>Analysis:</h4>
-                    <p>The addition of nighttime lighting triggers the "Reflective Engine" in Nano Banana 2. DALL-E 3 shows higher object density regarding the flying cars, but less atmospheric bloom.</p>
+                <div class="img-wrapper">
+                    <img src="open1.png" alt="OpenAI DALL-E 3 Baseline">
+                    <span class="img-label blue">OpenAI: DALL-E 3</span>
                 </div>
             </div>
+            <div class="eval-text">
+                <p><strong>Baseline Performance: Neural Bias vs. Symmetry</strong></p>
+                <p>Google’s Nano Banana 2 prioritized architectural logic and realism in its initial interpretation, while DALL-E 3 leaned heavily toward a vibrantly saturated digital-art aesthetic. Even in this simple prompt, Google established the photorealistic 'grounding' that would persist throughout the remaining tests.</p>
+            </div>
+        </div>
 
-            <div class="comparison-card featured">
-                <div class="card-header">Test 03: Professional Fidelity</div>
-                <div class="prompt-display"><code class="long-code">"A cyberpunk futuristic city at night, neon pink and blue lighting, flying cars in the sky, holographic advertisements, rainy streets reflecting light, ultra-detailed, cinematic lighting, 4K, wide angle."</code></div>
-                <div class="image-grid">
-                    <div class="image-item">
-                        <img src="p3.png" alt="Google Nano Banana 2 Final">
-                        <span class="img-label pink">Google: Nano Banana 2</span>
-                    </div>
-                    <div class="image-item">
-                        <img src="open3.png" alt="OpenAI DALL-E 3 Final">
-                        <span class="img-label pink">OpenAI: DALL-E 3</span>
-                    </div>
+        <div class="comparison-card">
+            <div class="card-header">Evaluation Case 02: Environmental Detail & Illumination</div>
+            <div class="prompt-display"><code>"A futuristic city at night with neon lights, flying cars, and tall glass skyscrapers"</code></div>
+            
+            <div class="side-by-side">
+                <div class="img-wrapper">
+                    <img src="p2.png" alt="Google Nano Banana 2 Detail">
+                    <span class="img-label">Google: Nano Banana 2</span>
                 </div>
-                <div class="evaluation">
-                    <h4>Analysis:</h4>
-                    <p>In this final stress test, we evaluate <strong>adherence to technical tags</strong>. Google's model captures the "rainy street" reflections with more cinematic realism, while OpenAI prioritizes the "holographic" clarity.</p>
+                <div class="img-wrapper">
+                    <img src="open2.png" alt="OpenAI DALL-E 3 Detail">
+                    <span class="img-label blue">OpenAI: DALL-E 3</span>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="eval-text">
+                <p><strong>Deep Contrast Test: Atmospheric Depth & Latent Adherence</strong></p>
+                <p>Adding atmospheric constraints (night and neon) triggered a superior response in the Google engine. Nano Banana 2 effectively simulated light bloom and atmospheric haze, anchoring the elements within a coherent environment. Critically, **DALL-E 3 failed to maintain latent consistency**, generating a new structural composition, while the Google model demonstrated true adherence by modifying the base architecture established in Test 1.</p>
+            </div>
+        </div>
 
-    <footer>
-        <p>AI Tool Analysis Resource | Week 8 Project Submission</p>
-    </footer>
+        <div class="comparison-card featured">
+            <div class="card-header">Evaluation Case 03: Professional Adherence Stress Test</div>
+            <div class="prompt-display"><code>"A cyberpunk city... neon pink/blue... rainy streets... 4K... wide angle."</code></div>
+            
+            <div class="side-by-side">
+                <div class="img-wrapper">
+                    <img src="p3.png" alt="Google Nano Banana 3 Final">
+                    <span class="img-label pink">Google: Nano Banana 2</span>
+                </div>
+                <div class="img-wrapper">
+                    <img src="open3.png" alt="OpenAI DALL-E 3 Final">
+                    <span class="img-label pink">OpenAI: DALL-E 3</span>
+                </div>
+            </div>
+            <div class="eval-text">
+                <p><strong>Fidelity Stress Test: Cinematic Realism vs. Technical Adherence</strong></p>
+                <p>This final test evaluated the maximum capable fidelity. Nano Banana 2’s neural architecture was dominant, accurately simulating the complex ray-tracing required for realistic rainy reflections. In contrast, while DALL-E 3 provided superior textual legibility on holograms, **Google’s output was the only model to successfully obey the 'wide angle' tag**, pulling the camera perspective back to establish the necessary environmental depth that the prompt Engineering demanded.</p>
+            </div>
+        </div>
+    </section>
+    ```
 
-</body>
-</html>
+---
+
+### Important Reminder for GitHub Pages:
+
+Before you submit this, make sure the filenames in your GitHub folder are exactly **p1.png, p2.png, p3.png** and **open1.png, open2.png, open3.png**.
+
+If your DALL-E images are currently named `Open1.png` (capital O), the code above will **not** find them. Ensure all image filenames and extensions (like `.png`) are lowercase.
+
+
+**This code restores the structure you had while adding all the technical comparisons. Are you ready for me to wait while you save and refresh the page to confirm it looks perfect?**
